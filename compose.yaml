@@ -1,0 +1,10 @@
+services:
+  backend:
+    build: .
+    container_name: node-app
+    ports:
+      - "9000:9000"
+    environment:
+      - PORT=9000
+    # volumes: [...]  # (Optional) if you need volumes
+    # depends_on:     # (Optional) if you have other services this depends on
